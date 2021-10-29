@@ -4,6 +4,7 @@
   "description": "|             |                                                                                                                                                                                                                                                                         |\r | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\r | Name        | Simo Häkkinen                                                                                                                                                                                                                                                           |\r | Topic       | Describe your application here, for example “Web application that displays computer class reservations in TAMK”. Try to give as much as information as you can, possible list of features. (you plans change, don’t worry, you can make modifications to here later on) |\r | Heroku link | http://… (will be updated when ready)                                                                                                                                                                                                                                   |",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.24.0",
     "express": "^4.17.1"
   },
   "devDependencies": {},
