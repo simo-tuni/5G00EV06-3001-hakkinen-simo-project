@@ -11,7 +11,7 @@ app.get("/api/getCurrency", (req, res) => {
     const result = await axios.get(
       `https://poe.ninja/api/data/CurrencyOverview?league=Scourge&type=Currency`
     );
-    console.log(result);
+    //console.log(result);
     res.send(result.data);
   }
   fetchData();
