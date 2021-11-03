@@ -11,8 +11,37 @@ app.get("/api/getCurrency", (req, res) => {
     const result = await axios.get(
       `https://poe.ninja/api/data/CurrencyOverview?league=Scourge&type=Currency`
     );
-    //console.log(result);
-    res.send(result.data);
+    let tmpArray = [];
+    for (let item of result.data.lines) {
+      for (let detail of result.data.currencyDetails) {
+        if (item.currencyTypeName === detail.name) {
+          let obj = {
+            Name: item.currencyTypeName,
+            Image: detail.icon,
+            Price: item.chaosEquivalent,
+          };
+          tmpArray.push(obj);
+        }
+      }
+    }
+    res.send(tmpArray);
+  }
+  fetchData();
+});
+
+app.get("/api/getCurrencyDetails", (req, res) => {
+  async function fetchData() {
+    const result = await axios.get(
+      `https://api.poe.watch/get?category=currency&league=Scourge`
+    );
+    for (let item of result.data) {
+      if (item.name === req.query.name) {
+        const history = await axios.get(
+          `https://api.poe.watch/history?id=${item.id}&league=Scourge`
+        );
+        res.send(history.data);
+      }
+    }
   }
   fetchData();
 });
