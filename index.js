@@ -6,11 +6,53 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
+app.get("/api/getPastCurrency", (req, res) => {
+  async function fetchData() {
+    let leagueId = 47;
+    if (req.query.League === "Expedition") leagueId = 47;
+    else if (req.query.League === "Hardcore Expedition") leagueId = 48;
+    else if (req.query.League === "Ultimatum") leagueId = 45;
+    else if (req.query.League === "Hardcore Ultimatum") leagueId = 46;
+    else if (req.query.League === "Ritual") leagueId = 43;
+    else if (req.query.League === "Hardcore Ritual") leagueId = 44;
+    const result = await axios
+      .get(`https://poe-antiquary.xyz/api/prices/${leagueId}/9/${req.query.Id}`)
+      .catch(function (error) {
+        console.log(error.toJSON());
+        if (error.response) {
+          return res.send({});
+        } else if (error.request) {
+          return res.send({});
+        } else {
+          return res.send({});
+        }
+      });
+    if (result.data === null) return res.send([{ History: null, Dates: null }]);
+    let tmpArray = [];
+    for (let item of result.data.pricePoints) {
+      let obj = {
+        History: item.chaos,
+        Dates: new Date(item.timestamp).toLocaleDateString("en-GB"),
+      };
+      tmpArray.push(obj);
+    }
+    res.send(tmpArray);
+  }
+  fetchData();
+});
+
 app.get("/api/getCurrency", (req, res) => {
   async function fetchData() {
-    const result = await axios.get(
-      `https://poe.ninja/api/data/CurrencyOverview?league=${req.query.League}&type=Currency`
-    );
+    const result = await axios
+      .get(
+        `https://poe.ninja/api/data/CurrencyOverview?league=${req.query.League}&type=Currency`
+      )
+      .catch(function (error) {
+        if (error.response) {
+          res.send({});
+        }
+      });
+
     let tmpArray = [];
     for (let item of result.data.lines) {
       for (let detail of result.data.currencyDetails) {
