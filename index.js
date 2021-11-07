@@ -17,7 +17,6 @@ app.get("/api/getPredictCurrency", (req, res) => {
     for await (const data of python.stdout) {
       console.log(data.toString());
       largeDataSet.push(data.toString());
-      console.log(largeDataSet);
     }
     /*
     python.stdout.on("data", function (data) {
@@ -42,7 +41,7 @@ app.get("/api/getPredictCurrency", (req, res) => {
       //console.log(largeDataSet[0].length);
       let tmpArray = [];
       //console.log(largeDataSet[0][i]);
-      let data = dataset[0].split(/[\[\]]+/);
+      let data = dataset[0].split(/[\[\]]/);
       tmpArray.push(...data);
       console.log("tmpArray:");
       console.log(tmpArray);
@@ -175,7 +174,7 @@ app.get("/api/getCurrencyDetails", (req, res) => {
           for (let i = 1; i < nlength; i++) {
             //console.log(watchHistory.data[wlength - i]);
             let [year, month, day, ...trash] =
-              watchHistory.data[wlength - i].date.split(/[\-T]+/);
+              watchHistory.data[wlength - i].date.split(/-T/);
             let obj = {
               History:
                 ninjaHistory.data.receiveCurrencyGraphData[nlength - i].value,
