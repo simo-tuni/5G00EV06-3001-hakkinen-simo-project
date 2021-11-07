@@ -41,13 +41,12 @@ app.get("/api/getPredictCurrency", (req, res) => {
       //console.log(largeDataSet[0][i]);
       let data = dataset[0].split(/[\[\]]+/);
       tmpArray.push(...data);
-      function isNumeric(n) {
-        return !isNaN(parseFloat(n)) && isFinite(n);
-      }
+      console.log("tmpArray:");
+      console.log(tmpArray);
       let returnArray = [];
       let counter = 1;
       for (let item of tmpArray) {
-        if (isNumeric(item)) {
+        if (!isNaN(parseFloat(item)) && isFinite(item)) {
           let obj = { Price: item, Day: counter };
           counter += 1;
           returnArray.push(obj);
