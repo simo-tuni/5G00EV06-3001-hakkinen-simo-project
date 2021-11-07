@@ -8,40 +8,44 @@ const port = process.env.PORT || 3000;
 app.use(express.static("public"));
 
 app.get("/api/getPredictCurrency", (req, res) => {
-  let testing = 2;
-  var largeDataSet = [];
-  // spawn new child process to call the python script
-  const python = spawn("python", [`web_pred.py`, `${testing}`]);
-  // collect data from script
-  python.stdout.on("data", function (data) {
-    console.log("Pipe data from python script ...");
-    largeDataSet.push(data.toString());
-  });
-  // in close event we are sure that stream from child process is closed
-  python.on("close", (code) => {
-    //console.log(largeDataSet);
-    //console.log(largeDataSet[0].length);
-    let tmpArray = [];
-    //console.log(largeDataSet[0][i]);
-    let data = largeDataSet[0].split(/[\[\]]+/);
-    tmpArray.push(...data);
-    function isNumeric(n) {
-      return !isNaN(parseFloat(n)) && isFinite(n);
-    }
-    let returnArray = [];
-    let counter = 1;
-    tmpArray.forEach((item) => {
-      if (isNumeric(item)) {
-        let obj = { Price: item, Day: counter };
-        counter += 1;
-        returnArray.push(obj);
-      }
+  async function fetchData() {
+    let testing = 2;
+    var largeDataSet = [];
+    // spawn new child process to call the python script
+    const python = spawn("python", [`web_pred.py`, `${testing}`]);
+    // collect data from script
+    python.stdout.on("data", function (data) {
+      //console.log("Pipe data from python script ...");
+      largeDataSet.push(data.toString());
     });
-    console.log(returnArray);
-    //console.log(`child process close all stdio with code ${code}`);
-    // send data to browser
-    res.send(returnArray);
-  });
+    // in close event we are sure that stream from child process is closed
+    python.on("close", (code) => {
+      console.log("entered 'on close'");
+      //console.log(largeDataSet);
+      //console.log(largeDataSet[0].length);
+      let tmpArray = [];
+      //console.log(largeDataSet[0][i]);
+      let data = largeDataSet[0].split(/[\[\]]+/);
+      tmpArray.push(...data);
+      function isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+      }
+      let returnArray = [];
+      let counter = 1;
+      tmpArray.forEach((item) => {
+        if (isNumeric(item)) {
+          let obj = { Price: item, Day: counter };
+          counter += 1;
+          returnArray.push(obj);
+        }
+      });
+      //console.log(returnArray);
+      //console.log(`child process close all stdio with code ${code}`);
+      // send data to browser
+      res.send(returnArray);
+    });
+  }
+  fetchData();
 });
 
 app.get("/api/getPastCurrency", (req, res) => {
