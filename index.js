@@ -36,6 +36,8 @@ app.get("/api/getPredictCurrency", (req, res) => {
     // in close event we are sure that stream from child process is closed
 
     async function arrayMutation(dataset) {
+      console.log("dataset:");
+      console.log(dataset);
       //console.log(largeDataSet);
       //console.log(largeDataSet[0].length);
       let tmpArray = [];
