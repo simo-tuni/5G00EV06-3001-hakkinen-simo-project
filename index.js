@@ -46,13 +46,14 @@ app.get("/api/getPredictCurrency", (req, res) => {
       }
       let returnArray = [];
       let counter = 1;
-      tmpArray.forEach((item) => {
+      for (let item of tmpArray) {
         if (isNumeric(item)) {
           let obj = { Price: item, Day: counter };
           counter += 1;
           returnArray.push(obj);
         }
-      });
+      }
+
       //console.log(returnArray);
       //console.log(`child process close all stdio with code ${code}`);
       // send data to browser
