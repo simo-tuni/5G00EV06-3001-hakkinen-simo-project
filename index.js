@@ -39,10 +39,11 @@ app.get("/api/getPredictCurrency", (req, res) => {
       console.log(dataset);
       //console.log(largeDataSet);
       //console.log(largeDataSet[0].length);
-      let tmpArray = [];
-      //console.log(largeDataSet[0][i]);
-      let data = dataset[0].split(/[\[\]]/);
-      tmpArray.push(...data);
+      let data = [];
+      for (let item of dataset) {
+        data.push(item.split(/[\[\]]/));
+      }
+      let tmpArray = [].concat(...data);
       console.log("tmpArray:");
       console.log(tmpArray);
       let returnArray = [];
