@@ -25,9 +25,11 @@ app.get("/api/getPredictCurrency", (req, res) => {
     });
     */
     python.on("error", (code) => {
+      console.log("on error");
       console.log(code);
     });
     python.on("exit", (code) => {
+      console.log("on exit");
       console.log(code);
     });
     // in close event we are sure that stream from child process is closed
@@ -54,6 +56,8 @@ app.get("/api/getPredictCurrency", (req, res) => {
       //console.log(returnArray);
       //console.log(`child process close all stdio with code ${code}`);
       // send data to browser
+      console.log("returnArray:");
+      console.log(returnArray);
       res.send(returnArray);
     });
   }
