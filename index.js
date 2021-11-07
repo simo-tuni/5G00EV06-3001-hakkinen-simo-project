@@ -14,9 +14,21 @@ app.get("/api/getPredictCurrency", (req, res) => {
     // spawn new child process to call the python script
     const python = spawn("python", [`web_pred.py`, `${testing}`]);
     // collect data from script
+    for await (const data of python.stdout) {
+      console.log(data.toString());
+      largeDataSet.push(data.toString());
+    }
+    /*
     python.stdout.on("data", function (data) {
       //console.log("Pipe data from python script ...");
       largeDataSet.push(data.toString());
+    });
+    */
+    python.on("error", (code) => {
+      console.log(code);
+    });
+    python.on("exit", (code) => {
+      console.log(code);
     });
     // in close event we are sure that stream from child process is closed
     python.on("close", (code) => {
