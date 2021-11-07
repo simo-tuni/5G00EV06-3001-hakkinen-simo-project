@@ -17,6 +17,7 @@ app.get("/api/getPredictCurrency", (req, res) => {
     for await (const data of python.stdout) {
       console.log(data.toString());
       largeDataSet.push(data.toString());
+      console.log(largeDataSet);
     }
     /*
     python.stdout.on("data", function (data) {
