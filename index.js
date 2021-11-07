@@ -33,13 +33,13 @@ app.get("/api/getPredictCurrency", (req, res) => {
       console.log(code);
     });
     // in close event we are sure that stream from child process is closed
-    python.on("close", (code) => {
-      console.log("entered 'on close'");
+
+    async function arrayMutation(dataset) {
       //console.log(largeDataSet);
       //console.log(largeDataSet[0].length);
       let tmpArray = [];
       //console.log(largeDataSet[0][i]);
-      let data = largeDataSet[0].split(/[\[\]]+/);
+      let data = dataset[0].split(/[\[\]]+/);
       tmpArray.push(...data);
       function isNumeric(n) {
         return !isNaN(parseFloat(n)) && isFinite(n);
@@ -59,6 +59,15 @@ app.get("/api/getPredictCurrency", (req, res) => {
       // send data to browser
       console.log("returnArray:");
       console.log(returnArray);
+      return returnArray;
+    }
+
+    python.on("close", async (code) => {
+      console.log("entered 'on close'");
+      console.log(code);
+
+      let returnArray = await arrayMutation(largeDataSet);
+
       res.send(returnArray);
     });
   }
