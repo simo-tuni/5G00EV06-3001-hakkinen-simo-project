@@ -4,18 +4,111 @@ const path = require("path");
 const app = express();
 const { spawn } = require("child_process");
 const port = process.env.PORT || 3000;
+const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 app.use(express.static("public"));
 
-app.get("/api/getPredictCurrency", (req, res) => {
+app.get("/api/createNewModel", (req, res) => {
+  /*
   async function fetchData() {
-    let testing = 2;
-    var largeDataSet = [];
-    // spawn new child process to call the python script
-    const python = spawn("python", [`web_pred.py`, `${testing}`]);
-    // collect data from script
+    const result = await axios
+      .get(
+        `https://poe.ninja/api/data/CurrencyOverview?league=Scourge&type=Currency`
+      )
+      .catch(function (error) {
+        if (error.response) {
+          res.send({});
+        }
+      });
+    let nameArray = [];
+    let idArray = [];
+    for (let item of result.data.lines) {
+      for (let detail of result.data.currencyDetails) {
+        if (item.currencyTypeName === detail.name) {
+          //let obj = {
+          //  Name: item.currencyTypeName,
+          //  Id: detail.id,
+          //};
+          //tmpArray.push(obj);
+          nameArray.push(item.currencyTypeName);
+          idArray.push(detail.id);
+        }
+      }
+    }
+    let arg_1 = [];
+    let arg_2 = [];
+    let arg_3 = [];
+    let arg_4 = [];
+    let data = [];
+    for (let i = 0; i < nameArray.length; i++) {
+      const ninjaHistory = await axios.get(
+        `https://poe.ninja/api/data/CurrencyHistory?league=Scourge&type=Currency&currencyId=${idArray[i]}`
+      );
+      for (
+        let a = 0;
+        a < ninjaHistory.data.receiveCurrencyGraphData.length;
+        a++
+      ) {
+        //arg_1.push(nameArray[i]);
+        //arg_2.push(ninjaHistory.data.receiveCurrencyGraphData[a].value);
+        //arg_3.push(a + 1);
+        //arg_4.push("Scourge");
+        let obj = {
+          Name: nameArray[i],
+          Price: ninjaHistory.data.receiveCurrencyGraphData[a].value,
+          Day: a + 1,
+          League: "Scourge",
+        };
+        data.push(obj);
+      }
+    }
+
+    const csvWriter = createCsvWriter({
+      path: "out.csv",
+      header: [
+        { id: "Name", title: "Name" },
+        { id: "Price", title: "Price" },
+        { id: "Day", title: "Day" },
+        { id: "League", title: "League" },
+      ],
+    });
+
+    csvWriter
+      .writeRecords(data)
+      .then(() => console.log("The CSV file was written successfully"));
+    console.log(arg_1);
+    largeDataSet = [];
+    const python = spawn("python", [`script1.py`]);
     for await (const data of python.stdout) {
       console.log(data.toString());
+      largeDataSet.push(data.toString());
+    }
+    python.on("error", (code) => {
+      console.log("on error");
+      console.log(code);
+    });
+    python.on("exit", (code) => {
+      console.log("on exit");
+      console.log(code);
+    });
+    python.on("close", async (code) => {
+      console.log("entered 'on close'");
+      console.log(code);
+    });
+    //res.send(tmpArray);
+  }
+  fetchData();
+  */
+});
+
+app.get("/api/getPredictCurrency", (req, res) => {
+  async function fetchData() {
+    var largeDataSet = [];
+    // spawn new child process to call the python script
+    const python = spawn("python", [`./ML/web_pred.py`, `${req.query.Name}`]);
+    // collect data from script
+    for await (const data of python.stdout) {
+      //console.log(data.toString());
       largeDataSet.push(data.toString());
     }
     /*
@@ -35,8 +128,8 @@ app.get("/api/getPredictCurrency", (req, res) => {
     // in close event we are sure that stream from child process is closed
 
     async function arrayMutation(dataset) {
-      console.log("dataset:");
-      console.log(dataset);
+      //console.log("dataset:");
+      //console.log(dataset);
       //console.log(largeDataSet);
       //console.log(largeDataSet[0].length);
       let data = [];
@@ -44,13 +137,13 @@ app.get("/api/getPredictCurrency", (req, res) => {
         data.push(item.split(/[\[\]]/));
       }
       let tmpArray = [].concat(...data);
-      console.log("tmpArray:");
-      console.log(tmpArray);
+      //console.log("tmpArray:");
+      //console.log(tmpArray);
       let returnArray = [];
       let counter = 1;
       for (let item of tmpArray) {
         if (!isNaN(parseFloat(item)) && isFinite(item)) {
-          let obj = { Price: item, Day: counter };
+          let obj = { Price: parseFloat(item), Day: counter };
           counter += 1;
           returnArray.push(obj);
         }
@@ -59,8 +152,8 @@ app.get("/api/getPredictCurrency", (req, res) => {
       //console.log(returnArray);
       //console.log(`child process close all stdio with code ${code}`);
       // send data to browser
-      console.log("returnArray:");
-      console.log(returnArray);
+      //console.log("returnArray:");
+      //console.log(returnArray);
       return returnArray;
     }
 
@@ -175,7 +268,7 @@ app.get("/api/getCurrencyDetails", (req, res) => {
           for (let i = 1; i < nlength; i++) {
             //console.log(watchHistory.data[wlength - i]);
             let [year, month, day, ...trash] =
-              watchHistory.data[wlength - i].date.split(/-T/);
+              watchHistory.data[wlength - i].date.split(/[\-T]+/);
             let obj = {
               History:
                 ninjaHistory.data.receiveCurrencyGraphData[nlength - i].value,
@@ -185,7 +278,6 @@ app.get("/api/getCurrencyDetails", (req, res) => {
           }
           tmpArray.reverse();
         }
-        //console.log(tmpArray);
         res.send(tmpArray);
       }
     }
