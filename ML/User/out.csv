@@ -69,7 +69,7 @@ Maven's Orb,588.1115,20,Scourge
 Maven's Orb,588,21,Scourge
 Maven's Orb,588,22,Scourge
 Maven's Orb,579.00013,23,Scourge
-Maven's Orb,504,24,Scourge
+Maven's Orb,506.45,24,Scourge
 Awakener's Orb,165.64143,1,Scourge
 Awakener's Orb,140.35169,2,Scourge
 Awakener's Orb,158,3,Scourge
@@ -93,7 +93,7 @@ Awakener's Orb,367.5,20,Scourge
 Awakener's Orb,367.5,21,Scourge
 Awakener's Orb,367.5,22,Scourge
 Awakener's Orb,362.5,23,Scourge
-Awakener's Orb,360,24,Scourge
+Awakener's Orb,361.75,24,Scourge
 Tempering Orb,77.49392,1,Scourge
 Tempering Orb,54.44444,2,Scourge
 Tempering Orb,64,3,Scourge
@@ -117,7 +117,7 @@ Tempering Orb,295.00443,20,Scourge
 Tempering Orb,296,21,Scourge
 Tempering Orb,367.45605,22,Scourge
 Tempering Orb,362.5,23,Scourge
-Tempering Orb,358.05,24,Scourge
+Tempering Orb,360.9736842105263,24,Scourge
 Hunter's Exalted Orb,99.02714,1,Scourge
 Hunter's Exalted Orb,100.9902,2,Scourge
 Hunter's Exalted Orb,108.33224,3,Scourge
@@ -166,7 +166,7 @@ Exalted Orb,147,21,Scourge
 Exalted Orb,147,22,Scourge
 Exalted Orb,147,23,Scourge
 Exalted Orb,145,24,Scourge
-Exalted Orb,144,25,Scourge
+Exalted Orb,144.7,25,Scourge
 Warlord's Exalted Orb,64,1,Scourge
 Warlord's Exalted Orb,63.01815,2,Scourge
 Warlord's Exalted Orb,43.53212,3,Scourge
@@ -190,7 +190,7 @@ Warlord's Exalted Orb,87.45184,20,Scourge
 Warlord's Exalted Orb,73.5,21,Scourge
 Warlord's Exalted Orb,73.5,22,Scourge
 Warlord's Exalted Orb,72.5,23,Scourge
-Warlord's Exalted Orb,72,24,Scourge
+Warlord's Exalted Orb,72.35,24,Scourge
 Tainted Divine Teardrop,12,1,Scourge
 Tainted Divine Teardrop,9,2,Scourge
 Tainted Divine Teardrop,10,3,Scourge
@@ -239,30 +239,6 @@ Redeemer's Exalted Orb,72.9475,21,Scourge
 Redeemer's Exalted Orb,73.10013,22,Scourge
 Redeemer's Exalted Orb,72,23,Scourge
 Redeemer's Exalted Orb,71,24,Scourge
-Secondary Regrading Lens,20.072,1,Scourge
-Secondary Regrading Lens,16,2,Scourge
-Secondary Regrading Lens,18.00142,3,Scourge
-Secondary Regrading Lens,19,4,Scourge
-Secondary Regrading Lens,20,5,Scourge
-Secondary Regrading Lens,25.77838,6,Scourge
-Secondary Regrading Lens,28,7,Scourge
-Secondary Regrading Lens,34.05,8,Scourge
-Secondary Regrading Lens,40,9,Scourge
-Secondary Regrading Lens,46.16995,10,Scourge
-Secondary Regrading Lens,56.44456,11,Scourge
-Secondary Regrading Lens,58,12,Scourge
-Secondary Regrading Lens,58,13,Scourge
-Secondary Regrading Lens,63,14,Scourge
-Secondary Regrading Lens,60,15,Scourge
-Secondary Regrading Lens,55.20214,16,Scourge
-Secondary Regrading Lens,52.29832,17,Scourge
-Secondary Regrading Lens,62.96744,18,Scourge
-Secondary Regrading Lens,70,19,Scourge
-Secondary Regrading Lens,73.5,20,Scourge
-Secondary Regrading Lens,73.5,21,Scourge
-Secondary Regrading Lens,73.5,22,Scourge
-Secondary Regrading Lens,72.5,23,Scourge
-Secondary Regrading Lens,72.5,24,Scourge
 Prime Regrading Lens,10,1,Scourge
 Prime Regrading Lens,15,2,Scourge
 Prime Regrading Lens,16,3,Scourge
@@ -286,7 +262,31 @@ Prime Regrading Lens,69.66573,20,Scourge
 Prime Regrading Lens,70,21,Scourge
 Prime Regrading Lens,64.4325,22,Scourge
 Prime Regrading Lens,61.8005,23,Scourge
-Prime Regrading Lens,71.9,24,Scourge
+Prime Regrading Lens,72.35,24,Scourge
+Secondary Regrading Lens,20.072,1,Scourge
+Secondary Regrading Lens,16,2,Scourge
+Secondary Regrading Lens,18.00142,3,Scourge
+Secondary Regrading Lens,19,4,Scourge
+Secondary Regrading Lens,20,5,Scourge
+Secondary Regrading Lens,25.77838,6,Scourge
+Secondary Regrading Lens,28,7,Scourge
+Secondary Regrading Lens,34.05,8,Scourge
+Secondary Regrading Lens,40,9,Scourge
+Secondary Regrading Lens,46.16995,10,Scourge
+Secondary Regrading Lens,56.44456,11,Scourge
+Secondary Regrading Lens,58,12,Scourge
+Secondary Regrading Lens,58,13,Scourge
+Secondary Regrading Lens,63,14,Scourge
+Secondary Regrading Lens,60,15,Scourge
+Secondary Regrading Lens,55.20214,16,Scourge
+Secondary Regrading Lens,52.29832,17,Scourge
+Secondary Regrading Lens,62.96744,18,Scourge
+Secondary Regrading Lens,70,19,Scourge
+Secondary Regrading Lens,73.5,20,Scourge
+Secondary Regrading Lens,73.5,21,Scourge
+Secondary Regrading Lens,73.5,22,Scourge
+Secondary Regrading Lens,72.5,23,Scourge
+Secondary Regrading Lens,72.35,24,Scourge
 Crusader's Exalted Orb,58.17647,1,Scourge
 Crusader's Exalted Orb,22.16458,2,Scourge
 Crusader's Exalted Orb,24,3,Scourge
@@ -383,7 +383,7 @@ Sacred Orb,25,21,Scourge
 Sacred Orb,26.5558,22,Scourge
 Sacred Orb,25.61569,23,Scourge
 Sacred Orb,25.25026,24,Scourge
-Sacred Orb,24.65,25,Scourge
+Sacred Orb,24.5,25,Scourge
 Blessing of Chayula,189,1,Scourge
 Blessing of Chayula,167.10001,2,Scourge
 Blessing of Chayula,118.5,3,Scourge
@@ -432,7 +432,7 @@ Ancient Orb,14.40836,21,Scourge
 Ancient Orb,16.93346,22,Scourge
 Ancient Orb,18,23,Scourge
 Ancient Orb,18.97223,24,Scourge
-Ancient Orb,19.05,25,Scourge
+Ancient Orb,20,25,Scourge
 Ritual Vessel,18.71986,1,Scourge
 Ritual Vessel,5,2,Scourge
 Ritual Vessel,5,3,Scourge
@@ -457,6 +457,30 @@ Ritual Vessel,9.90025,21,Scourge
 Ritual Vessel,10.4502,22,Scourge
 Ritual Vessel,11,23,Scourge
 Ritual Vessel,16.555555555555557,24,Scourge
+Orb of Unmaking,5,1,Scourge
+Orb of Unmaking,4.25,2,Scourge
+Orb of Unmaking,5,3,Scourge
+Orb of Unmaking,5,4,Scourge
+Orb of Unmaking,5,5,Scourge
+Orb of Unmaking,7,6,Scourge
+Orb of Unmaking,7,7,Scourge
+Orb of Unmaking,7,8,Scourge
+Orb of Unmaking,7,9,Scourge
+Orb of Unmaking,6.95839,10,Scourge
+Orb of Unmaking,6.73708,11,Scourge
+Orb of Unmaking,7.21145,12,Scourge
+Orb of Unmaking,8.56276,13,Scourge
+Orb of Unmaking,9.99834,14,Scourge
+Orb of Unmaking,10,15,Scourge
+Orb of Unmaking,10,16,Scourge
+Orb of Unmaking,10,17,Scourge
+Orb of Unmaking,10,18,Scourge
+Orb of Unmaking,10,19,Scourge
+Orb of Unmaking,10,20,Scourge
+Orb of Unmaking,12,21,Scourge
+Orb of Unmaking,12.46156,22,Scourge
+Orb of Unmaking,13.61129,23,Scourge
+Orb of Unmaking,14.955,24,Scourge
 Tainted Mythic Orb,2.16364,1,Scourge
 Tainted Mythic Orb,4,2,Scourge
 Tainted Mythic Orb,9,3,Scourge
@@ -481,31 +505,7 @@ Tainted Mythic Orb,9.66719,21,Scourge
 Tainted Mythic Orb,10.96259,22,Scourge
 Tainted Mythic Orb,11.77811,23,Scourge
 Tainted Mythic Orb,13.80002,24,Scourge
-Tainted Mythic Orb,14,25,Scourge
-Orb of Unmaking,5,1,Scourge
-Orb of Unmaking,4.25,2,Scourge
-Orb of Unmaking,5,3,Scourge
-Orb of Unmaking,5,4,Scourge
-Orb of Unmaking,5,5,Scourge
-Orb of Unmaking,7,6,Scourge
-Orb of Unmaking,7,7,Scourge
-Orb of Unmaking,7,8,Scourge
-Orb of Unmaking,7,9,Scourge
-Orb of Unmaking,6.95839,10,Scourge
-Orb of Unmaking,6.73708,11,Scourge
-Orb of Unmaking,7.21145,12,Scourge
-Orb of Unmaking,8.56276,13,Scourge
-Orb of Unmaking,9.99834,14,Scourge
-Orb of Unmaking,10,15,Scourge
-Orb of Unmaking,10,16,Scourge
-Orb of Unmaking,10,17,Scourge
-Orb of Unmaking,10,18,Scourge
-Orb of Unmaking,10,19,Scourge
-Orb of Unmaking,10,20,Scourge
-Orb of Unmaking,12,21,Scourge
-Orb of Unmaking,12.46156,22,Scourge
-Orb of Unmaking,13.61129,23,Scourge
-Orb of Unmaking,14.240597894736842,24,Scourge
+Tainted Mythic Orb,12.8,25,Scourge
 Blessing of Esh,35.25,1,Scourge
 Blessing of Esh,12,2,Scourge
 Blessing of Esh,8,3,Scourge
@@ -529,32 +529,7 @@ Blessing of Esh,11.06433,20,Scourge
 Blessing of Esh,11,21,Scourge
 Blessing of Esh,11,22,Scourge
 Blessing of Esh,10,23,Scourge
-Blessing of Esh,10,24,Scourge
-Divine Orb,3,1,Scourge
-Divine Orb,3,2,Scourge
-Divine Orb,4,3,Scourge
-Divine Orb,5,4,Scourge
-Divine Orb,6,5,Scourge
-Divine Orb,7,6,Scourge
-Divine Orb,7,7,Scourge
-Divine Orb,6.75013,8,Scourge
-Divine Orb,6,9,Scourge
-Divine Orb,6,10,Scourge
-Divine Orb,6,11,Scourge
-Divine Orb,6,12,Scourge
-Divine Orb,7,13,Scourge
-Divine Orb,7,14,Scourge
-Divine Orb,7,15,Scourge
-Divine Orb,7,16,Scourge
-Divine Orb,7,17,Scourge
-Divine Orb,7,18,Scourge
-Divine Orb,7,19,Scourge
-Divine Orb,6.95006,20,Scourge
-Divine Orb,6.94378,21,Scourge
-Divine Orb,7.82718,22,Scourge
-Divine Orb,8,23,Scourge
-Divine Orb,8,24,Scourge
-Divine Orb,9,25,Scourge
+Blessing of Esh,9.4,24,Scourge
 Tainted Blessing,3,1,Scourge
 Tainted Blessing,2,2,Scourge
 Tainted Blessing,2,3,Scourge
@@ -651,6 +626,31 @@ Blessing of Xoph,10,21,Scourge
 Blessing of Xoph,9.65004,22,Scourge
 Blessing of Xoph,9.80025,23,Scourge
 Blessing of Xoph,8,24,Scourge
+Divine Orb,3,1,Scourge
+Divine Orb,3,2,Scourge
+Divine Orb,4,3,Scourge
+Divine Orb,5,4,Scourge
+Divine Orb,6,5,Scourge
+Divine Orb,7,6,Scourge
+Divine Orb,7,7,Scourge
+Divine Orb,6.75013,8,Scourge
+Divine Orb,6,9,Scourge
+Divine Orb,6,10,Scourge
+Divine Orb,6,11,Scourge
+Divine Orb,6,12,Scourge
+Divine Orb,7,13,Scourge
+Divine Orb,7,14,Scourge
+Divine Orb,7,15,Scourge
+Divine Orb,7,16,Scourge
+Divine Orb,7,17,Scourge
+Divine Orb,7,18,Scourge
+Divine Orb,7,19,Scourge
+Divine Orb,6.95006,20,Scourge
+Divine Orb,6.94378,21,Scourge
+Divine Orb,7.82718,22,Scourge
+Divine Orb,8,23,Scourge
+Divine Orb,8,24,Scourge
+Divine Orb,6.0277775,25,Scourge
 Exalted Shard,3,1,Scourge
 Exalted Shard,2.89474,2,Scourge
 Exalted Shard,3,3,Scourge
@@ -675,7 +675,7 @@ Exalted Shard,6.86256,21,Scourge
 Exalted Shard,7,22,Scourge
 Exalted Shard,7,23,Scourge
 Exalted Shard,7,24,Scourge
-Exalted Shard,6.75,25,Scourge
+Exalted Shard,6.966666,25,Scourge
 Prismatic Catalyst,1.17719,1,Scourge
 Prismatic Catalyst,2,2,Scourge
 Prismatic Catalyst,3,3,Scourge
@@ -723,7 +723,7 @@ Fertile Catalyst,4.83912,20,Scourge
 Fertile Catalyst,5,21,Scourge
 Fertile Catalyst,4.95835,22,Scourge
 Fertile Catalyst,4.92547,23,Scourge
-Fertile Catalyst,4.96578947368421,24,Scourge
+Fertile Catalyst,5,24,Scourge
 Tainted Chaos Orb,1,1,Scourge
 Tainted Chaos Orb,2,2,Scourge
 Tainted Chaos Orb,2,3,Scourge
@@ -773,31 +773,32 @@ Orb of Annulment,4,21,Scourge
 Orb of Annulment,4,22,Scourge
 Orb of Annulment,4,23,Scourge
 Orb of Annulment,4,24,Scourge
-Orb of Annulment,3.9441975,25,Scourge
-Awakened Sextant,1.53007,1,Scourge
-Awakened Sextant,1,2,Scourge
-Awakened Sextant,1,3,Scourge
-Awakened Sextant,1.29168,4,Scourge
-Awakened Sextant,1.34024,5,Scourge
-Awakened Sextant,1.45711,6,Scourge
-Awakened Sextant,1.96966,7,Scourge
-Awakened Sextant,1.982,8,Scourge
-Awakened Sextant,1.99751,9,Scourge
-Awakened Sextant,1.78948,10,Scourge
-Awakened Sextant,2.28437,11,Scourge
-Awakened Sextant,2.49048,12,Scourge
-Awakened Sextant,2.49368,13,Scourge
-Awakened Sextant,2.41926,14,Scourge
-Awakened Sextant,2.44206,15,Scourge
-Awakened Sextant,2.47729,16,Scourge
-Awakened Sextant,2.46119,17,Scourge
-Awakened Sextant,2.4935,18,Scourge
-Awakened Sextant,2.47895,19,Scourge
-Awakened Sextant,2.48737,20,Scourge
-Awakened Sextant,2.48607,21,Scourge
-Awakened Sextant,2.5425,22,Scourge
-Awakened Sextant,2.91829,23,Scourge
-Awakened Sextant,2.6139594444444443,24,Scourge
+Orb of Annulment,3.916724705882353,25,Scourge
+Tainted Exalted Orb,76.47431,1,Scourge
+Tainted Exalted Orb,4,2,Scourge
+Tainted Exalted Orb,3.52632,3,Scourge
+Tainted Exalted Orb,4,4,Scourge
+Tainted Exalted Orb,4,5,Scourge
+Tainted Exalted Orb,4,6,Scourge
+Tainted Exalted Orb,3.75046,7,Scourge
+Tainted Exalted Orb,3,8,Scourge
+Tainted Exalted Orb,3,9,Scourge
+Tainted Exalted Orb,3,10,Scourge
+Tainted Exalted Orb,3,11,Scourge
+Tainted Exalted Orb,3,12,Scourge
+Tainted Exalted Orb,3,13,Scourge
+Tainted Exalted Orb,3,14,Scourge
+Tainted Exalted Orb,3,15,Scourge
+Tainted Exalted Orb,3,16,Scourge
+Tainted Exalted Orb,3,17,Scourge
+Tainted Exalted Orb,3,18,Scourge
+Tainted Exalted Orb,3.7778,19,Scourge
+Tainted Exalted Orb,3,20,Scourge
+Tainted Exalted Orb,3,21,Scourge
+Tainted Exalted Orb,3,22,Scourge
+Tainted Exalted Orb,3,23,Scourge
+Tainted Exalted Orb,3,24,Scourge
+Tainted Exalted Orb,2.3,25,Scourge
 Unstable Catalyst,1,1,Scourge
 Unstable Catalyst,1,2,Scourge
 Unstable Catalyst,1,3,Scourge
@@ -821,7 +822,7 @@ Unstable Catalyst,2,20,Scourge
 Unstable Catalyst,2,21,Scourge
 Unstable Catalyst,2.90013,22,Scourge
 Unstable Catalyst,2,23,Scourge
-Unstable Catalyst,2.89772625,24,Scourge
+Unstable Catalyst,3,24,Scourge
 Infused Engineer's Orb,2,1,Scourge
 Infused Engineer's Orb,3.69928,2,Scourge
 Infused Engineer's Orb,3,3,Scourge
@@ -869,6 +870,30 @@ Veiled Chaos Orb,2,21,Scourge
 Veiled Chaos Orb,2,22,Scourge
 Veiled Chaos Orb,2,23,Scourge
 Veiled Chaos Orb,3,24,Scourge
+Awakened Sextant,1.53007,1,Scourge
+Awakened Sextant,1,2,Scourge
+Awakened Sextant,1,3,Scourge
+Awakened Sextant,1.29168,4,Scourge
+Awakened Sextant,1.34024,5,Scourge
+Awakened Sextant,1.45711,6,Scourge
+Awakened Sextant,1.96966,7,Scourge
+Awakened Sextant,1.982,8,Scourge
+Awakened Sextant,1.99751,9,Scourge
+Awakened Sextant,1.78948,10,Scourge
+Awakened Sextant,2.28437,11,Scourge
+Awakened Sextant,2.49048,12,Scourge
+Awakened Sextant,2.49368,13,Scourge
+Awakened Sextant,2.41926,14,Scourge
+Awakened Sextant,2.44206,15,Scourge
+Awakened Sextant,2.47729,16,Scourge
+Awakened Sextant,2.46119,17,Scourge
+Awakened Sextant,2.4935,18,Scourge
+Awakened Sextant,2.47895,19,Scourge
+Awakened Sextant,2.48737,20,Scourge
+Awakened Sextant,2.48607,21,Scourge
+Awakened Sextant,2.5425,22,Scourge
+Awakened Sextant,2.91829,23,Scourge
+Awakened Sextant,3.595833333333333,24,Scourge
 Harbinger's Orb,3,1,Scourge
 Harbinger's Orb,3,2,Scourge
 Harbinger's Orb,3,3,Scourge
@@ -892,32 +917,7 @@ Harbinger's Orb,2.61663,20,Scourge
 Harbinger's Orb,2.5,21,Scourge
 Harbinger's Orb,1.86002,22,Scourge
 Harbinger's Orb,0.41667,23,Scourge
-Harbinger's Orb,2.8444444444444446,24,Scourge
-Tainted Exalted Orb,76.47431,1,Scourge
-Tainted Exalted Orb,4,2,Scourge
-Tainted Exalted Orb,3.52632,3,Scourge
-Tainted Exalted Orb,4,4,Scourge
-Tainted Exalted Orb,4,5,Scourge
-Tainted Exalted Orb,4,6,Scourge
-Tainted Exalted Orb,3.75046,7,Scourge
-Tainted Exalted Orb,3,8,Scourge
-Tainted Exalted Orb,3,9,Scourge
-Tainted Exalted Orb,3,10,Scourge
-Tainted Exalted Orb,3,11,Scourge
-Tainted Exalted Orb,3,12,Scourge
-Tainted Exalted Orb,3,13,Scourge
-Tainted Exalted Orb,3,14,Scourge
-Tainted Exalted Orb,3,15,Scourge
-Tainted Exalted Orb,3,16,Scourge
-Tainted Exalted Orb,3,17,Scourge
-Tainted Exalted Orb,3,18,Scourge
-Tainted Exalted Orb,3.7778,19,Scourge
-Tainted Exalted Orb,3,20,Scourge
-Tainted Exalted Orb,3,21,Scourge
-Tainted Exalted Orb,3,22,Scourge
-Tainted Exalted Orb,3,23,Scourge
-Tainted Exalted Orb,3,24,Scourge
-Tainted Exalted Orb,2.3,25,Scourge
+Harbinger's Orb,2.263157894736842,24,Scourge
 Tainted Chromatic Orb,1,1,Scourge
 Tainted Chromatic Orb,1,2,Scourge
 Tainted Chromatic Orb,2,3,Scourge
@@ -942,7 +942,7 @@ Tainted Chromatic Orb,2,21,Scourge
 Tainted Chromatic Orb,2,22,Scourge
 Tainted Chromatic Orb,2,23,Scourge
 Tainted Chromatic Orb,2,24,Scourge
-Tainted Chromatic Orb,2.3358945,25,Scourge
+Tainted Chromatic Orb,1.9226175,25,Scourge
 Tainted Orb of Fusing,1,1,Scourge
 Tainted Orb of Fusing,1,2,Scourge
 Tainted Orb of Fusing,5,3,Scourge
@@ -968,31 +968,6 @@ Tainted Orb of Fusing,2,22,Scourge
 Tainted Orb of Fusing,2,23,Scourge
 Tainted Orb of Fusing,2,24,Scourge
 Tainted Orb of Fusing,2,25,Scourge
-Stacked Deck,1,1,Scourge
-Stacked Deck,0.66667,2,Scourge
-Stacked Deck,0.66667,3,Scourge
-Stacked Deck,0.92564,4,Scourge
-Stacked Deck,1,5,Scourge
-Stacked Deck,0.97826,6,Scourge
-Stacked Deck,0.9759,7,Scourge
-Stacked Deck,0.99352,8,Scourge
-Stacked Deck,1,9,Scourge
-Stacked Deck,1,10,Scourge
-Stacked Deck,1,11,Scourge
-Stacked Deck,1,12,Scourge
-Stacked Deck,1.00376,13,Scourge
-Stacked Deck,1.1245,14,Scourge
-Stacked Deck,1.29813,15,Scourge
-Stacked Deck,1.19868,16,Scourge
-Stacked Deck,1.28773,17,Scourge
-Stacked Deck,1.31258,18,Scourge
-Stacked Deck,1.34668,19,Scourge
-Stacked Deck,1.4054,20,Scourge
-Stacked Deck,1.47521,21,Scourge
-Stacked Deck,1.47857,22,Scourge
-Stacked Deck,1.49897,23,Scourge
-Stacked Deck,1.5,24,Scourge
-Stacked Deck,1.606426,25,Scourge
 Tempering Catalyst,1,1,Scourge
 Tempering Catalyst,1,2,Scourge
 Tempering Catalyst,1,3,Scourge
@@ -1090,6 +1065,31 @@ Gemcutter's Prism,0.71272,22,Scourge
 Gemcutter's Prism,0.71342,23,Scourge
 Gemcutter's Prism,0.71376,24,Scourge
 Gemcutter's Prism,0.71429,25,Scourge
+Stacked Deck,1,1,Scourge
+Stacked Deck,0.66667,2,Scourge
+Stacked Deck,0.66667,3,Scourge
+Stacked Deck,0.92564,4,Scourge
+Stacked Deck,1,5,Scourge
+Stacked Deck,0.97826,6,Scourge
+Stacked Deck,0.9759,7,Scourge
+Stacked Deck,0.99352,8,Scourge
+Stacked Deck,1,9,Scourge
+Stacked Deck,1,10,Scourge
+Stacked Deck,1,11,Scourge
+Stacked Deck,1,12,Scourge
+Stacked Deck,1.00376,13,Scourge
+Stacked Deck,1.1245,14,Scourge
+Stacked Deck,1.29813,15,Scourge
+Stacked Deck,1.19868,16,Scourge
+Stacked Deck,1.28773,17,Scourge
+Stacked Deck,1.31258,18,Scourge
+Stacked Deck,1.34668,19,Scourge
+Stacked Deck,1.4054,20,Scourge
+Stacked Deck,1.47521,21,Scourge
+Stacked Deck,1.47857,22,Scourge
+Stacked Deck,1.49897,23,Scourge
+Stacked Deck,1.5,24,Scourge
+Stacked Deck,0.67123,25,Scourge
 Annulment Shard,1,1,Scourge
 Annulment Shard,1,2,Scourge
 Annulment Shard,0.97784,3,Scourge
@@ -1164,54 +1164,6 @@ Orb of Regret,0.45485,22,Scourge
 Orb of Regret,0.45455,23,Scourge
 Orb of Regret,0.45448,24,Scourge
 Orb of Regret,0.4542215,25,Scourge
-Intrinsic Catalyst,1,1,Scourge
-Intrinsic Catalyst,1,2,Scourge
-Intrinsic Catalyst,1,3,Scourge
-Intrinsic Catalyst,1,4,Scourge
-Intrinsic Catalyst,1,5,Scourge
-Intrinsic Catalyst,0.98918,6,Scourge
-Intrinsic Catalyst,0.88889,7,Scourge
-Intrinsic Catalyst,0.81471,8,Scourge
-Intrinsic Catalyst,0.79261,9,Scourge
-Intrinsic Catalyst,0.71416,10,Scourge
-Intrinsic Catalyst,0.65001,11,Scourge
-Intrinsic Catalyst,0.55556,12,Scourge
-Intrinsic Catalyst,0.5,13,Scourge
-Intrinsic Catalyst,0.49884,14,Scourge
-Intrinsic Catalyst,0.49438,15,Scourge
-Intrinsic Catalyst,0.4878,16,Scourge
-Intrinsic Catalyst,0.48106,17,Scourge
-Intrinsic Catalyst,0.48155,18,Scourge
-Intrinsic Catalyst,0.47567,19,Scourge
-Intrinsic Catalyst,0.44185,20,Scourge
-Intrinsic Catalyst,0.43079,21,Scourge
-Intrinsic Catalyst,0.43076,22,Scourge
-Intrinsic Catalyst,0.42857,23,Scourge
-Intrinsic Catalyst,0.44012,24,Scourge
-Turbulent Catalyst,1,1,Scourge
-Turbulent Catalyst,1,2,Scourge
-Turbulent Catalyst,1,3,Scourge
-Turbulent Catalyst,1,4,Scourge
-Turbulent Catalyst,0.98,5,Scourge
-Turbulent Catalyst,0.98411,6,Scourge
-Turbulent Catalyst,0.86924,7,Scourge
-Turbulent Catalyst,0.77259,8,Scourge
-Turbulent Catalyst,0.66667,9,Scourge
-Turbulent Catalyst,0.63425,10,Scourge
-Turbulent Catalyst,0.5,11,Scourge
-Turbulent Catalyst,0.5,12,Scourge
-Turbulent Catalyst,0.49322,13,Scourge
-Turbulent Catalyst,0.45619,14,Scourge
-Turbulent Catalyst,0.44444,15,Scourge
-Turbulent Catalyst,0.44444,16,Scourge
-Turbulent Catalyst,0.44444,17,Scourge
-Turbulent Catalyst,0.44444,18,Scourge
-Turbulent Catalyst,0.44347,19,Scourge
-Turbulent Catalyst,0.42857,20,Scourge
-Turbulent Catalyst,0.42857,21,Scourge
-Turbulent Catalyst,0.42857,22,Scourge
-Turbulent Catalyst,0.42589,23,Scourge
-Turbulent Catalyst,0.4340915384615385,24,Scourge
 Orb of Scouring,0.76262,1,Scourge
 Orb of Scouring,0.39937,2,Scourge
 Orb of Scouring,0.5,3,Scourge
@@ -1237,6 +1189,54 @@ Orb of Scouring,0.38417,22,Scourge
 Orb of Scouring,0.39247,23,Scourge
 Orb of Scouring,0.42241,24,Scourge
 Orb of Scouring,0.4164436842105263,25,Scourge
+Turbulent Catalyst,1,1,Scourge
+Turbulent Catalyst,1,2,Scourge
+Turbulent Catalyst,1,3,Scourge
+Turbulent Catalyst,1,4,Scourge
+Turbulent Catalyst,0.98,5,Scourge
+Turbulent Catalyst,0.98411,6,Scourge
+Turbulent Catalyst,0.86924,7,Scourge
+Turbulent Catalyst,0.77259,8,Scourge
+Turbulent Catalyst,0.66667,9,Scourge
+Turbulent Catalyst,0.63425,10,Scourge
+Turbulent Catalyst,0.5,11,Scourge
+Turbulent Catalyst,0.5,12,Scourge
+Turbulent Catalyst,0.49322,13,Scourge
+Turbulent Catalyst,0.45619,14,Scourge
+Turbulent Catalyst,0.44444,15,Scourge
+Turbulent Catalyst,0.44444,16,Scourge
+Turbulent Catalyst,0.44444,17,Scourge
+Turbulent Catalyst,0.44444,18,Scourge
+Turbulent Catalyst,0.44347,19,Scourge
+Turbulent Catalyst,0.42857,20,Scourge
+Turbulent Catalyst,0.42857,21,Scourge
+Turbulent Catalyst,0.42857,22,Scourge
+Turbulent Catalyst,0.42589,23,Scourge
+Turbulent Catalyst,0.42857,24,Scourge
+Intrinsic Catalyst,1,1,Scourge
+Intrinsic Catalyst,1,2,Scourge
+Intrinsic Catalyst,1,3,Scourge
+Intrinsic Catalyst,1,4,Scourge
+Intrinsic Catalyst,1,5,Scourge
+Intrinsic Catalyst,0.98918,6,Scourge
+Intrinsic Catalyst,0.88889,7,Scourge
+Intrinsic Catalyst,0.81471,8,Scourge
+Intrinsic Catalyst,0.79261,9,Scourge
+Intrinsic Catalyst,0.71416,10,Scourge
+Intrinsic Catalyst,0.65001,11,Scourge
+Intrinsic Catalyst,0.55556,12,Scourge
+Intrinsic Catalyst,0.5,13,Scourge
+Intrinsic Catalyst,0.49884,14,Scourge
+Intrinsic Catalyst,0.49438,15,Scourge
+Intrinsic Catalyst,0.4878,16,Scourge
+Intrinsic Catalyst,0.48106,17,Scourge
+Intrinsic Catalyst,0.48155,18,Scourge
+Intrinsic Catalyst,0.47567,19,Scourge
+Intrinsic Catalyst,0.44185,20,Scourge
+Intrinsic Catalyst,0.43079,21,Scourge
+Intrinsic Catalyst,0.43076,22,Scourge
+Intrinsic Catalyst,0.42857,23,Scourge
+Intrinsic Catalyst,0.42857,24,Scourge
 Regal Orb,1,1,Scourge
 Regal Orb,0.9774,2,Scourge
 Regal Orb,0.90909,3,Scourge
@@ -1261,7 +1261,7 @@ Regal Orb,0.41665,21,Scourge
 Regal Orb,0.4058,22,Scourge
 Regal Orb,0.38574,23,Scourge
 Regal Orb,0.38235,24,Scourge
-Regal Orb,0.37167923076923076,25,Scourge
+Regal Orb,0.38041363636363634,25,Scourge
 Simple Sextant,0.78571,1,Scourge
 Simple Sextant,0.57404,2,Scourge
 Simple Sextant,0.45182,3,Scourge
@@ -1384,7 +1384,7 @@ Blessed Orb,0.33259,21,Scourge
 Blessed Orb,0.3324,22,Scourge
 Blessed Orb,0.33333,23,Scourge
 Blessed Orb,0.33308,24,Scourge
-Blessed Orb,0.33331105263157895,25,Scourge
+Blessed Orb,0.32803470588235295,25,Scourge
 Orb of Horizons,2.5,1,Scourge
 Orb of Horizons,0.70522,2,Scourge
 Orb of Horizons,0.66667,3,Scourge
@@ -1410,31 +1410,6 @@ Orb of Horizons,0.26667,22,Scourge
 Orb of Horizons,0.26932,23,Scourge
 Orb of Horizons,0.26958,24,Scourge
 Orb of Horizons,0.26308894736842103,25,Scourge
-Orb of Alteration,0.06782,1,Scourge
-Orb of Alteration,0.05816,2,Scourge
-Orb of Alteration,0.06667,3,Scourge
-Orb of Alteration,0.12375,4,Scourge
-Orb of Alteration,0.14186,5,Scourge
-Orb of Alteration,0.14286,6,Scourge
-Orb of Alteration,0.16504,7,Scourge
-Orb of Alteration,0.16641,8,Scourge
-Orb of Alteration,0.15873,9,Scourge
-Orb of Alteration,0.15385,10,Scourge
-Orb of Alteration,0.1538,11,Scourge
-Orb of Alteration,0.1538,12,Scourge
-Orb of Alteration,0.15385,13,Scourge
-Orb of Alteration,0.16605,14,Scourge
-Orb of Alteration,0.16667,15,Scourge
-Orb of Alteration,0.16653,16,Scourge
-Orb of Alteration,0.16667,17,Scourge
-Orb of Alteration,0.16667,18,Scourge
-Orb of Alteration,0.16667,19,Scourge
-Orb of Alteration,0.16667,20,Scourge
-Orb of Alteration,0.17157,21,Scourge
-Orb of Alteration,0.17748,22,Scourge
-Orb of Alteration,0.18182,23,Scourge
-Orb of Alteration,0.1959,24,Scourge
-Orb of Alteration,0.20820714285714287,25,Scourge
 Silver Coin,0.35036,1,Scourge
 Silver Coin,0.16667,2,Scourge
 Silver Coin,0.16667,3,Scourge
@@ -1460,31 +1435,31 @@ Silver Coin,0.14439,22,Scourge
 Silver Coin,0.14839,23,Scourge
 Silver Coin,0.1553,24,Scourge
 Silver Coin,0.14286,25,Scourge
-Glassblower's Bauble,1,1,Scourge
-Glassblower's Bauble,0.48674,2,Scourge
-Glassblower's Bauble,0.33333,3,Scourge
-Glassblower's Bauble,0.33333,4,Scourge
-Glassblower's Bauble,0.33333,5,Scourge
-Glassblower's Bauble,0.33333,6,Scourge
-Glassblower's Bauble,0.32727,7,Scourge
-Glassblower's Bauble,0.28571,8,Scourge
-Glassblower's Bauble,0.2829,9,Scourge
-Glassblower's Bauble,0.27184,10,Scourge
-Glassblower's Bauble,0.26786,11,Scourge
-Glassblower's Bauble,0.26317,12,Scourge
-Glassblower's Bauble,0.24801,13,Scourge
-Glassblower's Bauble,0.2381,14,Scourge
-Glassblower's Bauble,0.22431,15,Scourge
-Glassblower's Bauble,0.22206,16,Scourge
-Glassblower's Bauble,0.22006,17,Scourge
-Glassblower's Bauble,0.22172,18,Scourge
-Glassblower's Bauble,0.21445,19,Scourge
-Glassblower's Bauble,0.21372,20,Scourge
-Glassblower's Bauble,0.19914,21,Scourge
-Glassblower's Bauble,0.1937,22,Scourge
-Glassblower's Bauble,0.19029,23,Scourge
-Glassblower's Bauble,0.19539,24,Scourge
-Glassblower's Bauble,0.207123125,25,Scourge
+Orb of Alteration,0.06782,1,Scourge
+Orb of Alteration,0.05816,2,Scourge
+Orb of Alteration,0.06667,3,Scourge
+Orb of Alteration,0.12375,4,Scourge
+Orb of Alteration,0.14186,5,Scourge
+Orb of Alteration,0.14286,6,Scourge
+Orb of Alteration,0.16504,7,Scourge
+Orb of Alteration,0.16641,8,Scourge
+Orb of Alteration,0.15873,9,Scourge
+Orb of Alteration,0.15385,10,Scourge
+Orb of Alteration,0.1538,11,Scourge
+Orb of Alteration,0.1538,12,Scourge
+Orb of Alteration,0.15385,13,Scourge
+Orb of Alteration,0.16605,14,Scourge
+Orb of Alteration,0.16667,15,Scourge
+Orb of Alteration,0.16653,16,Scourge
+Orb of Alteration,0.16667,17,Scourge
+Orb of Alteration,0.16667,18,Scourge
+Orb of Alteration,0.16667,19,Scourge
+Orb of Alteration,0.16667,20,Scourge
+Orb of Alteration,0.17157,21,Scourge
+Orb of Alteration,0.17748,22,Scourge
+Orb of Alteration,0.18182,23,Scourge
+Orb of Alteration,0.1959,24,Scourge
+Orb of Alteration,0.2057,25,Scourge
 Cartographer's Chisel,1,1,Scourge
 Cartographer's Chisel,0.25,2,Scourge
 Cartographer's Chisel,0.22222,3,Scourge
@@ -1510,6 +1485,31 @@ Cartographer's Chisel,0.16667,22,Scourge
 Cartographer's Chisel,0.16667,23,Scourge
 Cartographer's Chisel,0.16667,24,Scourge
 Cartographer's Chisel,0.16667,25,Scourge
+Glassblower's Bauble,1,1,Scourge
+Glassblower's Bauble,0.48674,2,Scourge
+Glassblower's Bauble,0.33333,3,Scourge
+Glassblower's Bauble,0.33333,4,Scourge
+Glassblower's Bauble,0.33333,5,Scourge
+Glassblower's Bauble,0.33333,6,Scourge
+Glassblower's Bauble,0.32727,7,Scourge
+Glassblower's Bauble,0.28571,8,Scourge
+Glassblower's Bauble,0.2829,9,Scourge
+Glassblower's Bauble,0.27184,10,Scourge
+Glassblower's Bauble,0.26786,11,Scourge
+Glassblower's Bauble,0.26317,12,Scourge
+Glassblower's Bauble,0.24801,13,Scourge
+Glassblower's Bauble,0.2381,14,Scourge
+Glassblower's Bauble,0.22431,15,Scourge
+Glassblower's Bauble,0.22206,16,Scourge
+Glassblower's Bauble,0.22006,17,Scourge
+Glassblower's Bauble,0.22172,18,Scourge
+Glassblower's Bauble,0.21445,19,Scourge
+Glassblower's Bauble,0.21372,20,Scourge
+Glassblower's Bauble,0.19914,21,Scourge
+Glassblower's Bauble,0.1937,22,Scourge
+Glassblower's Bauble,0.19029,23,Scourge
+Glassblower's Bauble,0.19539,24,Scourge
+Glassblower's Bauble,0.207123125,25,Scourge
 Noxious Catalyst,1,1,Scourge
 Noxious Catalyst,1,2,Scourge
 Noxious Catalyst,1,3,Scourge
@@ -1581,7 +1581,7 @@ Tainted Blacksmith's Whetstone,0.14286,21,Scourge
 Tainted Blacksmith's Whetstone,0.14278,22,Scourge
 Tainted Blacksmith's Whetstone,0.14286,23,Scourge
 Tainted Blacksmith's Whetstone,0.14286,24,Scourge
-Tainted Blacksmith's Whetstone,0.1376975,25,Scourge
+Tainted Blacksmith's Whetstone,0.14286,25,Scourge
 Orb of Fusing,0.33333,1,Scourge
 Orb of Fusing,0.16667,2,Scourge
 Orb of Fusing,0.16667,3,Scourge
@@ -1606,7 +1606,7 @@ Orb of Fusing,0.13333,21,Scourge
 Orb of Fusing,0.13333,22,Scourge
 Orb of Fusing,0.13333,23,Scourge
 Orb of Fusing,0.13333,24,Scourge
-Orb of Fusing,0.133178,25,Scourge
+Orb of Fusing,0.13333,25,Scourge
 Imbued Catalyst,1,1,Scourge
 Imbued Catalyst,1,2,Scourge
 Imbued Catalyst,1,3,Scourge
@@ -1630,7 +1630,7 @@ Imbued Catalyst,0.20833,20,Scourge
 Imbued Catalyst,0.20833,21,Scourge
 Imbued Catalyst,0.21875,22,Scourge
 Imbued Catalyst,0.20586,23,Scourge
-Imbued Catalyst,0.21922,24,Scourge
+Imbued Catalyst,0.20651272727272726,24,Scourge
 Enkindling Orb,0.47991,1,Scourge
 Enkindling Orb,0.45455,2,Scourge
 Enkindling Orb,0.37981,3,Scourge
@@ -1704,31 +1704,6 @@ Orb of Chance,0.06667,22,Scourge
 Orb of Chance,0.06667,23,Scourge
 Orb of Chance,0.06667,24,Scourge
 Orb of Chance,0.07086157894736841,25,Scourge
-Orb of Binding,1,1,Scourge
-Orb of Binding,0.32806,2,Scourge
-Orb of Binding,0.25752,3,Scourge
-Orb of Binding,0.22106,4,Scourge
-Orb of Binding,0.19182,5,Scourge
-Orb of Binding,0.16621,6,Scourge
-Orb of Binding,0.14286,7,Scourge
-Orb of Binding,0.13333,8,Scourge
-Orb of Binding,0.11491,9,Scourge
-Orb of Binding,0.1104,10,Scourge
-Orb of Binding,0.10483,11,Scourge
-Orb of Binding,0.09742,12,Scourge
-Orb of Binding,0.09091,13,Scourge
-Orb of Binding,0.09091,14,Scourge
-Orb of Binding,0.09054,15,Scourge
-Orb of Binding,0.09005,16,Scourge
-Orb of Binding,0.08996,17,Scourge
-Orb of Binding,0.08333,18,Scourge
-Orb of Binding,0.08333,19,Scourge
-Orb of Binding,0.08333,20,Scourge
-Orb of Binding,0.08327,21,Scourge
-Orb of Binding,0.08325,22,Scourge
-Orb of Binding,0.08318,23,Scourge
-Orb of Binding,0.0829,24,Scourge
-Orb of Binding,0.0832805,25,Scourge
 Chromatic Orb,0.06746,1,Scourge
 Chromatic Orb,0.06124,2,Scourge
 Chromatic Orb,0.11055,3,Scourge
@@ -1753,7 +1728,32 @@ Chromatic Orb,0.07691,21,Scourge
 Chromatic Orb,0.07689,22,Scourge
 Chromatic Orb,0.07686,23,Scourge
 Chromatic Orb,0.07688,24,Scourge
-Chromatic Orb,0.07576,25,Scourge
+Chromatic Orb,0.0768575,25,Scourge
+Orb of Binding,1,1,Scourge
+Orb of Binding,0.32806,2,Scourge
+Orb of Binding,0.25752,3,Scourge
+Orb of Binding,0.22106,4,Scourge
+Orb of Binding,0.19182,5,Scourge
+Orb of Binding,0.16621,6,Scourge
+Orb of Binding,0.14286,7,Scourge
+Orb of Binding,0.13333,8,Scourge
+Orb of Binding,0.11491,9,Scourge
+Orb of Binding,0.1104,10,Scourge
+Orb of Binding,0.10483,11,Scourge
+Orb of Binding,0.09742,12,Scourge
+Orb of Binding,0.09091,13,Scourge
+Orb of Binding,0.09091,14,Scourge
+Orb of Binding,0.09054,15,Scourge
+Orb of Binding,0.09005,16,Scourge
+Orb of Binding,0.08996,17,Scourge
+Orb of Binding,0.08333,18,Scourge
+Orb of Binding,0.08333,19,Scourge
+Orb of Binding,0.08333,20,Scourge
+Orb of Binding,0.08327,21,Scourge
+Orb of Binding,0.08325,22,Scourge
+Orb of Binding,0.08318,23,Scourge
+Orb of Binding,0.0829,24,Scourge
+Orb of Binding,0.07833727272727273,25,Scourge
 Orb of Augmentation,0.3206,1,Scourge
 Orb of Augmentation,0.04511,2,Scourge
 Orb of Augmentation,0.03333,3,Scourge
@@ -1829,6 +1829,31 @@ Engineer's Orb,0.04348,22,Scourge
 Engineer's Orb,0.04329,23,Scourge
 Engineer's Orb,0.04333,24,Scourge
 Engineer's Orb,0.04079,25,Scourge
+Orb of Transmutation,0.16569,1,Scourge
+Orb of Transmutation,0.03333,2,Scourge
+Orb of Transmutation,0.02706,3,Scourge
+Orb of Transmutation,0.01818,4,Scourge
+Orb of Transmutation,0.01601,5,Scourge
+Orb of Transmutation,0.01414,6,Scourge
+Orb of Transmutation,0.01111,7,Scourge
+Orb of Transmutation,0.01095,8,Scourge
+Orb of Transmutation,0.0104,9,Scourge
+Orb of Transmutation,0.00909,10,Scourge
+Orb of Transmutation,0.00901,11,Scourge
+Orb of Transmutation,0.00862,12,Scourge
+Orb of Transmutation,0.00833,13,Scourge
+Orb of Transmutation,0.00833,14,Scourge
+Orb of Transmutation,0.00833,15,Scourge
+Orb of Transmutation,0.00833,16,Scourge
+Orb of Transmutation,0.00833,17,Scourge
+Orb of Transmutation,0.00833,18,Scourge
+Orb of Transmutation,0.00838,19,Scourge
+Orb of Transmutation,0.00833,20,Scourge
+Orb of Transmutation,0.00853,21,Scourge
+Orb of Transmutation,0.00895,22,Scourge
+Orb of Transmutation,0.00854,23,Scourge
+Orb of Transmutation,0.00894,24,Scourge
+Orb of Transmutation,0.008563636363636364,25,Scourge
 Blacksmith's Whetstone,0.67692,1,Scourge
 Blacksmith's Whetstone,0.04637,2,Scourge
 Blacksmith's Whetstone,0.03322,3,Scourge
@@ -1854,31 +1879,6 @@ Blacksmith's Whetstone,0.01665,22,Scourge
 Blacksmith's Whetstone,0.01591,23,Scourge
 Blacksmith's Whetstone,0.01581,24,Scourge
 Blacksmith's Whetstone,0.016655263157894735,25,Scourge
-Orb of Transmutation,0.16569,1,Scourge
-Orb of Transmutation,0.03333,2,Scourge
-Orb of Transmutation,0.02706,3,Scourge
-Orb of Transmutation,0.01818,4,Scourge
-Orb of Transmutation,0.01601,5,Scourge
-Orb of Transmutation,0.01414,6,Scourge
-Orb of Transmutation,0.01111,7,Scourge
-Orb of Transmutation,0.01095,8,Scourge
-Orb of Transmutation,0.0104,9,Scourge
-Orb of Transmutation,0.00909,10,Scourge
-Orb of Transmutation,0.00901,11,Scourge
-Orb of Transmutation,0.00862,12,Scourge
-Orb of Transmutation,0.00833,13,Scourge
-Orb of Transmutation,0.00833,14,Scourge
-Orb of Transmutation,0.00833,15,Scourge
-Orb of Transmutation,0.00833,16,Scourge
-Orb of Transmutation,0.00833,17,Scourge
-Orb of Transmutation,0.00833,18,Scourge
-Orb of Transmutation,0.00838,19,Scourge
-Orb of Transmutation,0.00833,20,Scourge
-Orb of Transmutation,0.00853,21,Scourge
-Orb of Transmutation,0.00895,22,Scourge
-Orb of Transmutation,0.00854,23,Scourge
-Orb of Transmutation,0.00894,24,Scourge
-Orb of Transmutation,0.009054,25,Scourge
 Armourer's Scrap,0.12169,1,Scourge
 Armourer's Scrap,0.02278,2,Scourge
 Armourer's Scrap,0.01815,3,Scourge
@@ -1903,4 +1903,4 @@ Armourer's Scrap,0.01003,21,Scourge
 Armourer's Scrap,0.00994,22,Scourge
 Armourer's Scrap,0.00967,23,Scourge
 Armourer's Scrap,0.00909,24,Scourge
-Armourer's Scrap,0.010940588235294117,25,Scourge
+Armourer's Scrap,0.00833,25,Scourge
