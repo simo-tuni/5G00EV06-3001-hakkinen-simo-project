@@ -5,11 +5,18 @@ const app = express();
 const { spawn } = require("child_process");
 const port = process.env.PORT || 3000;
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
-
+let pathToPython = "./ML/Original/";
 app.use(express.static("public"));
+app.use(express.json());
 
-app.get("/api/createNewModel", (req, res) => {
-  /*
+app.post("/api/setModel", (req, res) => {
+  console.log(req.body);
+  pathToPython = `./ML/${req.body.model}/web_pred.py`;
+  console.log(pathToPython);
+  res.send(`Changed model to ${req.body.model}`);
+});
+
+app.get("/api/getCurrenctData", (req, res) => {
   async function fetchData() {
     const result = await axios
       .get(
@@ -25,20 +32,11 @@ app.get("/api/createNewModel", (req, res) => {
     for (let item of result.data.lines) {
       for (let detail of result.data.currencyDetails) {
         if (item.currencyTypeName === detail.name) {
-          //let obj = {
-          //  Name: item.currencyTypeName,
-          //  Id: detail.id,
-          //};
-          //tmpArray.push(obj);
           nameArray.push(item.currencyTypeName);
           idArray.push(detail.id);
         }
       }
     }
-    let arg_1 = [];
-    let arg_2 = [];
-    let arg_3 = [];
-    let arg_4 = [];
     let data = [];
     for (let i = 0; i < nameArray.length; i++) {
       const ninjaHistory = await axios.get(
@@ -49,10 +47,6 @@ app.get("/api/createNewModel", (req, res) => {
         a < ninjaHistory.data.receiveCurrencyGraphData.length;
         a++
       ) {
-        //arg_1.push(nameArray[i]);
-        //arg_2.push(ninjaHistory.data.receiveCurrencyGraphData[a].value);
-        //arg_3.push(a + 1);
-        //arg_4.push("Scourge");
         let obj = {
           Name: nameArray[i],
           Price: ninjaHistory.data.receiveCurrencyGraphData[a].value,
@@ -64,7 +58,7 @@ app.get("/api/createNewModel", (req, res) => {
     }
 
     const csvWriter = createCsvWriter({
-      path: "out.csv",
+      path: "./ML/User/out.csv",
       header: [
         { id: "Name", title: "Name" },
         { id: "Price", title: "Price" },
@@ -76,28 +70,62 @@ app.get("/api/createNewModel", (req, res) => {
     csvWriter
       .writeRecords(data)
       .then(() => console.log("The CSV file was written successfully"));
-    console.log(arg_1);
-    largeDataSet = [];
-    const python = spawn("python", [`script1.py`]);
-    for await (const data of python.stdout) {
-      console.log(data.toString());
-      largeDataSet.push(data.toString());
-    }
-    python.on("error", (code) => {
-      console.log("on error");
-      console.log(code);
-    });
-    python.on("exit", (code) => {
-      console.log("on exit");
-      console.log(code);
-    });
-    python.on("close", async (code) => {
-      console.log("entered 'on close'");
-      console.log(code);
-    });
-    //res.send(tmpArray);
+
+    res.send(`Finished getting data!`);
   }
   fetchData();
+});
+
+app.post("/api/createNewModel", (req, res) => {
+  //console.log(req.body);
+  let epochs = req.body.fitsettings.epochs;
+  let batchsize = req.body.fitsettings.batchsize;
+  let layersettings = req.body.layersettings;
+  //console.log(epochs);
+  //console.log(batchsize);
+  //console.log(layersettings);
+  if (
+    epochs < 1 ||
+    epochs > 1000 ||
+    isNaN(epochs) ||
+    Number.isInteger(epochs) ||
+    !(epochs % 1 === 0)
+  ) {
+    return res.send(
+      `ERROR: Epochs must be an integer equal or greater than 1, and less than 1000, received ${epochs}`
+    );
+  } else if (
+    batchsize < 1 ||
+    batchsize > 1000 ||
+    isNaN(batchsize) ||
+    Number.isInteger(batchsize) ||
+    !(batchsize % 1 === 0)
+  ) {
+    return res.send(
+      `ERROR: Batch Size must be an integer equal or greater than 1, and less than 1000, received ${batchsize}`
+    );
+  } else if (layersettings.length === 0 || layersettings.length > 10) {
+    return res.send(
+      `ERROR: Layer amount must be between 1 and 10, received ${layersettings.length}`
+    );
+  }
+
+  for (let i = 0; i < layersettings.length; i++) {
+    if (
+      layersettings[i].amount < 1 ||
+      layersettings[i].amount > 1000 ||
+      isNaN(layersettings[i].amount) ||
+      Number.isInteger(layersettings[i].amount) ||
+      !(layersettings[i].amount % 1 === 0)
+    ) {
+      return res.send(
+        `ERROR: One or more of the layers had incorrect amount of units`
+      );
+    }
+  }
+  res.send(`User created model is now ready to be loaded!`);
+  /*
+  
   */
 });
 
@@ -105,7 +133,7 @@ app.get("/api/getPredictCurrency", (req, res) => {
   async function fetchData() {
     var largeDataSet = [];
     // spawn new child process to call the python script
-    const python = spawn("python", [`./ML/web_pred.py`, `${req.query.Name}`]);
+    const python = spawn("python", [`${pathToPython}`, `${req.query.Name}`]);
     // collect data from script
     for await (const data of python.stdout) {
       //console.log(data.toString());
