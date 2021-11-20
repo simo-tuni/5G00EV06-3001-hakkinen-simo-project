@@ -5,7 +5,7 @@ const app = express();
 const { spawn } = require("child_process");
 const port = process.env.PORT || 3000;
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
-let pathToPython = "./ML/Original/";
+let pathToPython = "./ML/Original/web_pred.py";
 app.use(express.static("public"));
 app.use(express.json());
 
@@ -123,10 +123,40 @@ app.post("/api/createNewModel", (req, res) => {
       );
     }
   }
+  let obj = {
+    epochs: epochs,
+    batch_size: batchsize,
+    layer_settings: layersettings,
+  };
+
+  async function trainModel() {
+    var largeDataSet = [];
+    //const python = spawn("python", [`${pathToPython}`, `${req.query.Name}`]);
+    const python = spawn("python", [`./ML/User/web.py`, JSON.stringify(obj)]);
+    for await (const data of python.stdout) {
+      //console.log(data.toString());
+      largeDataSet.push(data.toString());
+    }
+    python.on("error", (code) => {
+      console.log("on error");
+      console.log(code);
+    });
+    python.on("exit", (code) => {
+      console.log("on exit");
+      console.log(code);
+    });
+    python.on("close", async (code) => {
+      console.log(largeDataSet);
+      console.log("entered 'on close'");
+      console.log(code);
+
+      //let returnArray = await arrayMutation(largeDataSet);
+
+      //res.send(returnArray);
+    });
+  }
+  trainModel();
   res.send(`User created model is now ready to be loaded!`);
-  /*
-  
-  */
 });
 
 app.get("/api/getPredictCurrency", (req, res) => {
@@ -264,6 +294,26 @@ app.get("/api/getCurrency", (req, res) => {
 });
 
 app.get("/api/getCurrencyDetails", (req, res) => {
+  async function errorHandling() {
+    console.log(`${req.query.name} was not found in poe.watch response`);
+    const ninjaHistory = await axios.get(
+      `https://poe.ninja/api/data/CurrencyHistory?league=${req.query.League}&type=Currency&currencyId=${req.query.Id}`
+    );
+    let tmpArray = [];
+
+    nlength = ninjaHistory.data.receiveCurrencyGraphData.length;
+
+    for (let i = 1; i < nlength; i++) {
+      let obj = {
+        History: ninjaHistory.data.receiveCurrencyGraphData[i].value,
+        Dates: i,
+      };
+      tmpArray.push(obj);
+    }
+    //tmpArray.reverse();
+    return res.send(tmpArray);
+  }
+
   async function fetchData() {
     const result = await axios.get(
       `https://api.poe.watch/get?category=currency&league=${req.query.League}`
@@ -306,9 +356,10 @@ app.get("/api/getCurrencyDetails", (req, res) => {
           }
           tmpArray.reverse();
         }
-        res.send(tmpArray);
+        return res.send(tmpArray);
       }
     }
+    errorHandling();
   }
   fetchData();
 });

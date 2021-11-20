@@ -9,12 +9,12 @@ import sys
 item_to_predict = sys.argv[1]
 # item_to_predict = 'Exalted Orb'
 #lataa malli
-model = load_model('./ML/Original/price_model.h5')
+model = load_model('./ML/User/price_model.h5')
 
  
 
 # load encoder
-with open('./ML/Original/price-ct.pickle', 'rb') as f:
+with open('./ML/User/price-ct.pickle', 'rb') as f:
     ct = pickle.load(f)
 
  
