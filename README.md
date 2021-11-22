@@ -10,8 +10,9 @@
 |			  | ~~Add machine learning component~~ done                                                                                                                                                                                                        							|
 |			  | ~~Add ML components for every currency type~~ done                                                                                                                                                                                                       						|
 |			  | ~~Add a way for the User to re-train NN model with User-given parameters~~ done                                                                                                                                                                                                     						|
-|			  | Comment code                                                                                                                                                                                                    						|
-|			  | Add info to home page                                                                                                                                                                                                    						|
+|			  | ~~Comment JS code~~ done                                                                                                                                                                                                    						|
+|			  | ~~Add info to home page~~ done                                                                                                                                                                                                    						|
+|			  | Comment python code                                                                                                                                                                                                  						|
 
 Release 1: 2021-11-15 features
 	
