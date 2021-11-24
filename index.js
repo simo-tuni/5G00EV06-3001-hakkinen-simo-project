@@ -159,12 +159,17 @@ app.post("/api/createNewModel", (req, res) => {
       Spawn a child process of type 'python', with arguments that containt the path to the file and stringified JSON object.
     */
     res.writeHead(202);
+
+    let interval = setInterval(() => {
+      res.write(" ");
+    }, 15000);
+
     const python = spawn("python", [`./ML/User/web.py`, JSON.stringify(obj)]);
     for await (const data of python.stdout) {
       // This loop listens to the python child process' console and saves it to an array, this is mainly for debugging.
       largeDataSet.push(data.toString());
-      res.write(" ");
     }
+    clearInterval(interval);
     // Logging, these are mainly used for debugging in this app
     python.on("error", (code) => {
       console.log("on error");
@@ -178,7 +183,9 @@ app.post("/api/createNewModel", (req, res) => {
       console.log(largeDataSet);
       console.log("entered 'on close'");
       console.log(code);
-      return res.send(`User created model is now ready to be loaded!`); // Send response to frontend.
+      res.write(`User created model is now ready to be loaded!`);
+      res.end();
+      //return res.send(`User created model is now ready to be loaded!`); // Send response to frontend.
     });
   }
   trainModel();
