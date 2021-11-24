@@ -32,6 +32,7 @@ function Predictionsettings() {
     [..."Waiting for response..."], // Default message that is displayed when User starts training new neural network
   ]);
   const [showResponse, setShowResponse] = useState(false); // Hides the response UI until User has started training a new neural network
+  const [showButton, setShowButton] = useState(true); // Hides the start button when User has started training a new neural network
 
   /*
     Table rows and table data are created from settings
@@ -157,6 +158,9 @@ function Predictionsettings() {
     This function is used to get data from poe.ninja and train a new neural network with user defined settings
   */
   const createNewModel = () => {
+    setShowButton(false);
+    setGetResponse(...["Waiting for response..."]);
+    setPostResponse(...["Waiting for response..."]);
     /*
       Frontend checks for setting validity, these are also checked in backend to prevent any invalid settings from being used to train the neural network
     */
@@ -194,6 +198,7 @@ function Predictionsettings() {
       });
       console.log(resultFromPost);
       setPostResponse([...resultFromPost.data]); // Update UI so User can see progress updates
+      setShowButton(true);
     }
     newModel();
   };
@@ -215,6 +220,14 @@ function Predictionsettings() {
           </tr>
         </tbody>
       </Table>
+    );
+  };
+
+  const MLButton = () => {
+    return (
+      <Button variant="primary" onClick={() => createNewModel("Original")}>
+        <h3>Create a new Neural Network model using the settings above</h3>
+      </Button>
     );
   };
 
@@ -327,9 +340,7 @@ function Predictionsettings() {
 
       {showModel ? <SettingsModel /> : null}
 
-      <Button variant="warning" onClick={() => createNewModel("Original")}>
-        <h3>Create a new Neural Network model using the settings above</h3>
-      </Button>
+      {showButton ? <MLButton /> : null}
       {showResponse ? <ResponseTable /> : null}
     </Container>
   );

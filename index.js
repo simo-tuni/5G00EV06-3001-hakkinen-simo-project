@@ -174,10 +174,10 @@ app.post("/api/createNewModel", (req, res) => {
       console.log(largeDataSet);
       console.log("entered 'on close'");
       console.log(code);
+      return res.send(`User created model is now ready to be loaded!`); // Send response to frontend.
     });
   }
   trainModel();
-  res.send(`User created model is now ready to be loaded!`); // Send response to frontend.
 });
 
 /*
