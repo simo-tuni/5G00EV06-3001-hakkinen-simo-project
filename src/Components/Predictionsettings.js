@@ -186,7 +186,7 @@ function Predictionsettings() {
       /*
         This api call gets current currency data from poe.ninja for the 'Scourge' league and stores that data for the python script
       */
-      const resultFromGet = await axios.get(`/api/getCurrenctData`);
+      const resultFromGet = await axios.get(`/api/getCurrentData`);
       console.log(resultFromGet);
       setGetResponse([...resultFromGet.data]); // Update UI so User can see progress updates
       /*
