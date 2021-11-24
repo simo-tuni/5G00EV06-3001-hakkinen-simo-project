@@ -163,7 +163,7 @@ app.post("/api/createNewModel", (req, res) => {
     for await (const data of python.stdout) {
       // This loop listens to the python child process' console and saves it to an array, this is mainly for debugging.
       largeDataSet.push(data.toString());
-      res.write(space);
+      res.write(" ");
     }
     // Logging, these are mainly used for debugging in this app
     python.on("error", (code) => {
