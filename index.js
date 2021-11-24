@@ -21,7 +21,7 @@ app.post("/api/setModel", (req, res) => {
 /*
 This API endpoint fetches current poe.ninja currency data from the 'Scourge' league and writes it to a .csv file
 */
-app.get("/api/getCurrenctData", (req, res) => {
+app.get("/api/getCurrentData", (req, res) => {
   async function fetchData() {
     const result = await axios
       .get(
@@ -158,10 +158,12 @@ app.post("/api/createNewModel", (req, res) => {
     /*
       Spawn a child process of type 'python', with arguments that containt the path to the file and stringified JSON object.
     */
+    res.writeHead(202);
     const python = spawn("python", [`./ML/User/web.py`, JSON.stringify(obj)]);
     for await (const data of python.stdout) {
       // This loop listens to the python child process' console and saves it to an array, this is mainly for debugging.
       largeDataSet.push(data.toString());
+      res.write(space);
     }
     // Logging, these are mainly used for debugging in this app
     python.on("error", (code) => {
