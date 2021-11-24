@@ -96,7 +96,12 @@ app.get("/api/getCurrenctData", (req, res) => {
   This api endpoint creates a new python child process to train a new neural network with User given parameters.
 */
 app.post("/api/createNewModel", (req, res) => {
-  req.setTimeout(0); // Timeout is set to never time out the request, since it will take multiple minutes to train even a small neural network.
+  req.setTimeout(0, function () {
+    console.log("req.timeout");
+  }); // Timeout is set to never time out the request, since it will take multiple minutes to train even a small neural network.
+  res.setTimeout(0, function () {
+    console.log("res.timeout");
+  });
   // Cut request into parts for clearer code
   let epochs = req.body.fitsettings.epochs;
   let batchsize = req.body.fitsettings.batchsize;
