@@ -12,7 +12,7 @@
 |			  | ~~Add a way for the User to re-train NN model with User-given parameters~~ done                                                                                                                                                                                                     						|
 |			  | ~~Comment JS code~~ done                                                                                                                                                                                                    						|
 |			  | ~~Add info to home page~~ done                                                                                                                                                                                                    						|
-|			  | Comment python code                                                                                                                                                                                                  						|
+|			  | ~~Comment python code~~ done                                                                                                                                                                                                  						|
 
 Release 1: 2021-11-15 features
 	

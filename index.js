@@ -10,6 +10,7 @@ const port = process.env.PORT || 3000; // If app in run on Heroku, it will use t
 */
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 let pathToPython = "./ML/Original/web_pred.py"; // Default path to python file directory
+let training_in_progress = false; // Variable to track if training is currently ongoing
 app.use(express.static("public")); // App uses 'public' folder
 app.use(express.json()); // This allows JSON requests to be read by the backend
 
@@ -22,6 +23,11 @@ app.post("/api/setModel", (req, res) => {
 This API endpoint fetches current poe.ninja currency data from the 'Scourge' league and writes it to a .csv file
 */
 app.get("/api/getCurrentData", (req, res) => {
+  if (training_in_progress == true) {
+    return res.send(
+      "ERROR: Another instance is already undergoing training, wait until it is finished!" // Prevent User training more than 1 model at a time
+    );
+  }
   async function fetchData() {
     const result = await axios
       .get(
@@ -96,6 +102,11 @@ app.get("/api/getCurrentData", (req, res) => {
   This api endpoint creates a new python child process to train a new neural network with User given parameters.
 */
 app.post("/api/createNewModel", (req, res) => {
+  if (training_in_progress == true) {
+    return res.send(
+      "ERROR: Another instance is already undergoing training, wait until it is finished!" // Prevent User training more than 1 model at a time
+    );
+  }
   // Timeout is set to never time out the request, since it will take multiple minutes to train even a small neural network.
   res.setTimeout(0);
   // Cut request into parts for clearer code
@@ -154,6 +165,7 @@ app.post("/api/createNewModel", (req, res) => {
   };
 
   async function trainModel() {
+    training_in_progress = true; // Training started, block access
     var largeDataSet = [];
 
     /*
@@ -191,6 +203,7 @@ app.post("/api/createNewModel", (req, res) => {
       console.log(code);
     });
     python.on("close", async (code) => {
+      training_in_progress = false; // Training is finished
       console.log(largeDataSet);
       console.log("entered 'on close'");
       console.log(code);
