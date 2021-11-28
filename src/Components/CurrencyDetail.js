@@ -24,8 +24,8 @@ function CurrencyDetail({ match }) {
   let [league, setLeague] = useState([location.state.League]); // The league the data is shown for depends on the selected league on the 'Currency' page
   let [pastleague, setPastLeague] = useState("Expedition"); // Default past league on the dropdown menu is set to 'Expedition'
   const [showPrediction, setShowPrediction] = useState(false);
-  let [itemlink, setItemLink] = useState("");
-
+  let [itemlink, setItemLink] = useState(""); // Link to wiki page
+  let [realleague, setRealLeague] = useState(""); // Set displayed league name in UI
   /*
     This function gets price data predicted by the selected neural network for the selected currency item in the 'Scourge' league.
   */
@@ -40,6 +40,7 @@ function CurrencyDetail({ match }) {
   */
   async function fetchOldData(oldLeague) {
     setPastLeague(oldLeague);
+    setRealLeague(oldLeague);
     setShowPrediction(false);
     const result = await axios.get(
       `/api/getPastCurrency?League=${oldLeague}&Id=${location.state.Id}` // League and item id is sent to backend
@@ -67,6 +68,7 @@ function CurrencyDetail({ match }) {
       return x;
     });
     setItemLink(`https://www.poewiki.net/wiki/${link}`); // Link to the currency items wiki page
+    setRealLeague(league);
   }, [league, location, match.params.id]);
 
   /*
@@ -229,7 +231,7 @@ function CurrencyDetail({ match }) {
           alignItems: "center",
         }}
       >
-        <h2>Real price</h2>
+        <h2>Real price in {realleague}</h2>
       </div>
       <div
         style={{
